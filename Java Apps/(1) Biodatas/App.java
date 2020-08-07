@@ -1,6 +1,6 @@
 import java.util.Scanner;
         
-public class BiodataClass {
+public class App {
     
     public static void main(String[] args) {
         //Inputs
@@ -71,5 +71,8 @@ public class BiodataClass {
         System.out.println(NIS[1] + "\t" + Name[1] + "\t" + Address[1] +
                 "\t\t" + Sex[1] + "\t" + Number[1] + "\t\t" + Weight[1] + "\t" +
                 Height[1]);
+
+        // Scanner Closure
+        read.close();
     }
 }

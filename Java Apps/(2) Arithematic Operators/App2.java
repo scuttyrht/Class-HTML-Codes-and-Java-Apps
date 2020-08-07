@@ -1,8 +1,6 @@
-package jproj2;
-
 import java.util.Scanner;
 
-public class Latihan2 {
+public class App2 {
     
     public static void main(String[] args)
     {
@@ -24,6 +22,9 @@ public class Latihan2 {
         System.out.println(" ");
         Average = (Number[0] + Number[1] + Number[2]) / 3;
         System.out.println("Rata-rata = " + Average);
+
+        // Scanner closure
+        read.close();
     }
     
 }

@@ -1,8 +1,6 @@
-package jproj3;
-
 import java.util.Scanner;
 
-public class Tugas1 {
+public class App1 {
 
     /**
      * @param args the command line arguments
@@ -71,6 +69,8 @@ public class Tugas1 {
             System.out.println("Tidak ada pilihan untuk " + op + ".\nPilihlan yang tersedia: '1', '2', '3', dan '4'");
         }
         
+        // Scanner Closure
+        read.close();
     }
     
 }
