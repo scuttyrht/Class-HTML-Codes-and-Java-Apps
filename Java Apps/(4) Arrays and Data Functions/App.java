@@ -1,3 +1,4 @@
+import java.project.refreshDiagnostics;
 import java.util.Scanner;
 
 public class App {

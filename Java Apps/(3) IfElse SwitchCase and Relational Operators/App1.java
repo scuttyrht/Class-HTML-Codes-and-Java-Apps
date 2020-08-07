@@ -6,7 +6,6 @@ public class App1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         // Preparation
         Scanner read = new Scanner(System.in);
         int op;
