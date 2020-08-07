@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class App {
+    
     static void bubbleSortAcsending(final int[] data) {  
         final int n = data.length;  
         int temp = 0;  
