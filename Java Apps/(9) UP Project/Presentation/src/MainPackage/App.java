@@ -55,7 +55,7 @@ public class App extends Methods {
                 } else {
                     m.setPencilStock(m.getPencilStock() - qty);
                     m.setTotalPrice(m.getTotalPrice() + (m.getPencilPrice() * qty));
-                    pr(qty + " Pencil have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice() + 
+                    pr(qty + " Pencils have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice() + 
                     "\nWould you like to order more? (Y/N) ");
                     String answer = read.next();
 
@@ -79,7 +79,7 @@ public class App extends Methods {
                 } else {
                     m.setEraserStock(m.getEraserStock() - qty);
                     m.setTotalPrice(m.getTotalPrice() + (m.getEraserPrice() * qty));
-                    pr(qty + " Eraser have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice() + 
+                    pr(qty + " Erasers have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice() + 
                     "\nWould you like to order more? (Y/N) ");
                     String answer = read.next();
 
