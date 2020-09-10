@@ -13,7 +13,7 @@ public class App extends Methods {
         Boolean retry = true;
 
         while (retry == true) {
-            prln("\n\nID\tObject\t\tPrice\t\tStock" + 
+            prln("\n\nID\tProduct\t\tPrice\t\tStock" + 
             "\nA1\tBallpoint\tRp " + m.getBallpointPrice() + "\t" + m.getBallpointStock() +
             "\nA2\tPencil\t\tRp " + m.getPencilPrice() + "\t" + m.getPencilStock() + 
             "\nA3\tEraser\t\tRp " + m.getEraserPrice() + "\t" + m.getEraserStock() + "\n" + 
@@ -31,16 +31,24 @@ public class App extends Methods {
                 } else {
                     m.setBallpointStock(m.getBallpointStock() - qty);
                     m.setTotalPrice(m.getTotalPrice() + (m.getBallpointPrice() * qty));
-                    pr(qty + " Ballpoints have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice() + 
-                    "\nWould you like to order more? (Y/N) ");
-                    String answer = read.next();
+                    pr(qty + " Ballpoints have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice());
 
-                    if (answer.equals("Y") || answer.equals("y")) {
-                        continue;
-                    } else {
-                        prln("\nThanks for shopping!");
-                        retry = false;
+                    if (m.getBallpointStock() == 0 && m.getPencilStock() == 0 && m.getEraserStock() == 0) {
+                        prln("\nAll products are sold out! Thanks for shopping!");
                         break;
+                    }
+
+                    else {
+                        pr("\nWould you like to buy more? (Y/N) ");
+                        String answer = read.next();
+
+                        if (answer.equals("Y") || answer.equals("y")) {
+                            continue;
+                        } else {
+                            prln("\nThanks for shopping!");
+                            retry = false;
+                            break;
+                        }
                     }
                 }
             }
@@ -55,16 +63,24 @@ public class App extends Methods {
                 } else {
                     m.setPencilStock(m.getPencilStock() - qty);
                     m.setTotalPrice(m.getTotalPrice() + (m.getPencilPrice() * qty));
-                    pr(qty + " Pencils have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice() + 
-                    "\nWould you like to order more? (Y/N) ");
-                    String answer = read.next();
+                    pr(qty + " Ballpoints have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice());
 
-                    if (answer.equals("Y") || answer.equals("y")) {
-                        continue;
-                    } else {
-                        prln("\nThanks for shopping!");
-                        retry = false;
+                    if (m.getBallpointStock() == 0 && m.getPencilStock() == 0 && m.getEraserStock() == 0) {
+                        prln("\nAll products are sold out! Thanks for shopping!");
                         break;
+                    }
+
+                    else {
+                        pr("\nWould you like to buy more? (Y/N) ");
+                        String answer = read.next();
+
+                        if (answer.equals("Y") || answer.equals("y")) {
+                            continue;
+                        } else {
+                            prln("\nThanks for shopping!");
+                            retry = false;
+                            break;
+                        }
                     }
                 }
             }
@@ -79,16 +95,24 @@ public class App extends Methods {
                 } else {
                     m.setEraserStock(m.getEraserStock() - qty);
                     m.setTotalPrice(m.getTotalPrice() + (m.getEraserPrice() * qty));
-                    pr(qty + " Erasers have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice() + 
-                    "\nWould you like to order more? (Y/N) ");
-                    String answer = read.next();
+                    pr(qty + " Ballpoints have been added to your cart!\nTotal Price: Rp " + m.getTotalPrice());
 
-                    if (answer.equals("Y") || answer.equals("y")) {
-                        continue;
-                    } else {
-                        prln("\nThanks for shopping!");
-                        retry = false;
+                    if (m.getBallpointStock() == 0 && m.getPencilStock() == 0 && m.getEraserStock() == 0) {
+                        prln("\nAll products are sold out! Thanks for shopping!");
                         break;
+                    }
+
+                    else {
+                        pr("\nWould you like to buy more? (Y/N) ");
+                        String answer = read.next();
+
+                        if (answer.equals("Y") || answer.equals("y")) {
+                            continue;
+                        } else {
+                            prln("\nThanks for shopping!");
+                            retry = false;
+                            break;
+                        }
                     }
                 }
             }
